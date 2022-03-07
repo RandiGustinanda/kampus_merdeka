@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/hitung.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form id="formulir">
+        <table class="tabel">
+            <caption>Calculator</caption>
+            <tr>
+                <td>Angka 1</td>
+                <td>:</td>
+                <td><input type="number" class="input" name="a1" onfocus="kosong1()" value="masukan bilangan"></td>
+            </tr>
+            <tr>
+                <td>Angka 2</td>
+                <td>:</td>
+                <td><input type="number" class="input" name="a2" onfocus="kosong2()" value="masukan bilangan"></td>
+            </tr>
+            <tr>
+                <td>Hasil</td>
+                <td>:</td>
+                <td><input type="number" class="hasil" name="hasil" id="hasil" disabled></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" >
+                    <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+                    <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+                    <input class="tombol" type="button" onclick="kali()" value="  *  ">
+                    <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+                    <input class="tombol" type="button" name="batal" value="Batal" onclick="kosongAll()" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
